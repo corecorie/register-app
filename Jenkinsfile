@@ -20,7 +20,7 @@ pipeline {
 
        stage("Test Application"){
            steps {
-               sh '''
+               sh 
         cat <<EOF > pom.xml
 <project>
   <modelVersion>4.0.0</modelVersion>
