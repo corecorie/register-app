@@ -20,16 +20,17 @@ pipeline {
 
        stage("Test Application"){
            steps {
-               sh 
-        cat <<EOF > pom.xml
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>test</artifactId>
-  <version>1.0</version>
-</project>
-EOF
-        mvn -e validate
+               sh '''
+                cat <<EOF > pom.xml
+                <project>
+                  <modelVersion>4.0.0</modelVersion>
+                  <groupId>com.example</groupId>
+                  <artifactId>test</artifactId>
+                  <version>1.0</version>
+                </project>
+                EOF
+                mvn -e validate
+                '''
                  sh "mvn test"
            }
        }
