@@ -29,7 +29,6 @@ pipeline {
                   <version>1.0</version>
                 </project>
                 EOF
-                mvn -e validate
                 '''
                  sh "mvn test"
            }
