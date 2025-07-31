@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Modern Login | Your App</title>
+    <title>HAHAHA Modern Login | Your App</title>
     <style>
         :root {
             --primary-color: #4361ee;
